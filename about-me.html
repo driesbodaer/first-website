@@ -10,10 +10,10 @@
   <body>
   <div class = 'container'>
 
-        <div class = 'menu'>
+        <header class = 'menu'>
           menu
           <a href = "/">Home page</a>
-        </div>
+        </header>
 
         <h1 class='normal'>It&lsquo;s me.</h1>
 
@@ -22,11 +22,45 @@
           <p>Hope to see you all soon</p>
         </div>
 
+        <form action='' method='get' class='form'>
+
+          <div class='frow'>
+            <label for='1st element'>Name</label>
+            <input id='2st element' name='text' type='text'>
+          </div>
+
+          <div class='frow'>
+            <label for='2st element'>last name</label>
+            <input id='2st element' name='last text' type='text'>
+          </div>
+
+          <fieldset class='fieldset'>
+            <legend>radiobuttons</legend>
+            <input id='3st element'
+                   name='radio'
+                   type='radio'
+                   value='1st choice' >
+            <label for='3st element'>1st choice</label>
+            <input id='4st element'
+                   name='radio'
+                   type='radio'
+                   value='2th choice'
+                    >
+            <label for='4st element' >2th choice</label>
+
+          </fieldset>
+          <div class='frow'>
+            <button>Submit</button>
+          </div>
+
+        </form>
 
 
-        <div class = 'footer'>
+
+        <footer class = 'footer'>
           <p> subscribe</p>
-        </div>
+        </footer>
+
 
 
 

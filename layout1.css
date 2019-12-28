@@ -15,6 +15,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+width: 100%;
 
 }
 
@@ -91,8 +92,60 @@ a:active {
   color: #fff;
 }
 
+.sidebar {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 110px;
+  background-color: #0328fc;
+  align-items: stretch;
+}
+.container-row {
+  display: flex;
+  flex-direction: row;
+ align-items: stretch;
 
+}
 
+.form {
+  background-color: #F6F7F8;
+  border: 1px solid red;
+  border-radius: 3px;
+  width: 85%;
+  padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.frow {
+  margin: 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.frow input {
+
+  width: 60%;
+}
+
+.fieldset{
+  
+}
+
+.frow button {
+
+  background-color: #fff;
+  width: 30%;
+}
+
+.frow button:hover {
+  background-color: #76AEED;
+}
+
+.frow button:active {
+  background-color: #407FC7;
+}
 
 
 /* Mobile Styles */
@@ -102,19 +155,19 @@ a:active {
   }
 }
 
-/* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  body {
-
-  }
-}
 
 /* Desktop Styles */
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 960px) {
 
     .menu,
     .footer {
 
     }
+
+    .frow {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
 
 }
